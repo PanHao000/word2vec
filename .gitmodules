@@ -1,0 +1,9 @@
+[submodule "java/nlp"]
+	path = java/nlp
+	url = git@github.com:NLPchina/Word2VEC_java.git
+[submodule "java/medallia"]
+	path = java/medallia
+	url = git@github.com:medallia/Word2VecJava.git
+[submodule "java/siegfang"]
+	path = java/siegfang
+	url = git@github.com:siegfang/word2vec.git
