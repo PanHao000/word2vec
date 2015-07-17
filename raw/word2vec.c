@@ -55,7 +55,7 @@ const int table_size = 1e8;
 int *table;
 
 void
-InitUnigramTable ()
+init_unigram_table ()
 {
   int a, i;
   double train_words_pow = 0;
@@ -772,7 +772,7 @@ TrainModel ()
 	return;
   InitNet ();
   if (negative > 0)
-	InitUnigramTable ();
+	init_unigram_table ();
   start = clock ();
   for (a = 0; a < num_threads; a++)
 	pthread_create (&pt[a], NULL, TrainModelThread, (void *) a);
